@@ -1,5 +1,6 @@
 import Footer from "components/Footer";
 import NavBar from "components/NavBar";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -13,6 +14,9 @@ function Home() {
                     <hr />
                     <p>Esta aplicação consiste em exibir um dashboard a partir de dados fornecidos por um back end construído com Spring Boot.</p>
                 </div>
+                <Link to="/dashboard">
+                    <button className="btn btn-primary btn-lg ">Dashboard</button>
+                </Link>
             </div>
             <Footer />
         </>
